@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="cloud-sun-rain-solid.svg" type="image/x-icon">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="weather-app">
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search for a city..." spellcheck="false">
+      <button class="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <div class="error-message">
+      City not found. Please try again.
+    </div>
+
+    <div class="weather-info">
+      <div class="current-weather">
+        <div class="weather-icon">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="temperature">30</div>
+        <h2 class="city">Raipur</h2>
+        <div class="description">Sun</div>
+      </div>
+
+      <div class="details">
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <div class="detail-text">
+            <span class="detail-value humidity">78%</span>
+            <span class="detail-label">Humidity</span>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-wind"></i>
+          </div>
+          <div class="detail-text">
+            <span class="detail-value wind">12 km/h</span>
+            <span class="detail-label">Wind Speed</span>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-temperature-low"></i>
+          </div>
+          <div class="detail-text">
+            <span class="detail-value feels-like">24°C</span>
+            <span class="detail-label">Feels Like</span>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">
+            <i class="fas fa-compress-arrows-alt"></i>
+          </div>
+          <div class="detail-text">
+            <span class="detail-value pressure">1012 hPa</span>
+            <span class="detail-label">Pressure</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="forecast">
+        <h3 class="forecast-title">5-Day Forecast</h3>
+        <div class="forecast-items">
+          <!-- Forecast items will be added dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
