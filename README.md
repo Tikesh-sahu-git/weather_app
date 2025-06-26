@@ -8,7 +8,7 @@ A modern, responsive Weather App built with **HTML, CSS, and JavaScript**, power
 
 ## 📸 Preview
 
-![Weather App Screenshot](weather_app.png) 
+![Weather App Screenshot](weather _app.png) 
 
 ---
 
